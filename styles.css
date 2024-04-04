@@ -8,11 +8,11 @@
 
 :root{
     background-color: black;
-    color: white;
+    color: #FFFFFF;
 }
 
 .container{
-    margin:auto;
+    margin:10%;
     margin-top: 10vh;
     padding:20px;
 }
@@ -42,6 +42,7 @@ td{
     /* padding: 2px; */
     border-bottom: 2px solid black;
     flex: 1;
+    /* white-space: nowrap; */
     /* text-align: right; */
 }
 
@@ -79,31 +80,55 @@ td{
         height:15px;
     }
     .row{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         padding: 20px 2px;
         gap:10px;
-        border-bottom: 2px solid rgb(255,255,255,0.5);
+    }
+    .container{
+        margin:1%;
+        padding:10px 5px;
+    }
+    .mcap{
+        text-align: left;
+    }
+    #form{
+        flex-direction: column;
+    }
+    #search{
+        width:90%;
+        margin: auto;
     }
 }
 
 #form{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:nowrap;
+    padding: 15px;
+    flex:1;
+    gap:20px;
 }
 #search{
-    border: 2px solid white;
+    border: 1px solid white;
     background-color: black;
     padding:10px;
     color: white;
+    flex:6;
 }
 #search::placeholder{
     color: white;
 }
 #sortMkt{
-
+    border: 1px solid white;
+    background-color: black;
+    padding:10px;
+    /* flex:3; */
+    color: white;
 }
 #sortPer{
-
+    border: 1px solid white;
+    background-color: black;
+    padding:10px;
+    /* flex:3; */
+    color: white;
 }
